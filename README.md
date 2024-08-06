@@ -125,3 +125,29 @@ Modificar no arquivo `.env` o valor da variável `APP_TIMEZONE` para `America/Sa
 APP_TIMEZONE=America/Sao_Paulo
 
 ```
+
+## Configurar a Redefinição de Senha do Usuário
+
+### Instalar o **MailHog**
+
+Para testar a configuração de redefinição de senha, iremos utilizar o **MailHog** que é uma ferramenta de desenvolvimento que permite capturar e exibir e-mails enviados por aplicativos durante o desenvolvimento local, ele simular um servidor de e-mail SMTP local.
+
+1. Acesse o link para download do **MailHog**: https://github.com/mailhog/MailHog/releases.
+
+2. Faça o download do arquivo binário (executável) do **MailHog** de acordo com seu Sistema Operacional.
+
+3. Inicie o **MailHog** executando o arquivo baixado, será apresentado na tela do terminal o seguinte conteúdo (ou algo parecido):
+**5. Criar o arquivo `database.sqlite` dentro do diretório `database`:**
+
+```
+2024/04/02 04:37:21 Using in-memory storage
+2024/04/02 04:37:22 [SMTP] Binding to address: 0.0.0.0:1025
+[HTTP] Binding to address: 0.0.0.0:8025
+2024/04/02 04:37:22 Serving under http://0.0.0.0:8025/
+Creating API v1 with WebPath:
+Creating API v2 with WebPath:
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+```
+
+4. No seu navegador e acesse `http://localhost:8025` para carregar a tela do **MailHog**, deverá constar a informação `Connected`, se não estiver constando `Connected` algo deu errado.
